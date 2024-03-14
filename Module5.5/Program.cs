@@ -18,6 +18,7 @@ void Echo(string phrase, int deep)
         modif = modif.Remove(0, 2);
     }
     Console.WriteLine("..." + modif);
+    Console.BackgroundColor = (ConsoleColor)deep;
 
     if (deep > 1)
     {
